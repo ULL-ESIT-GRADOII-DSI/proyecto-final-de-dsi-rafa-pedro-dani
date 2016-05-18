@@ -8,9 +8,9 @@
 En el siguiente enlace podrá ver como se ha distribuido la carga de trabajo entre los componentes del grupo según los commits realizados por cada uno, siguiendo un esquema de los archivos que se modificaron: [Vídeo commits CocoMusic](https://youtu.be/csT7chYobfE)
 
 ## Descripción del proyecto
-Coco music es un proyecto realizado por Rafa Herrero,Daniel Ramos Acosta y Pedro Ramos para la asignatura Desarrollo de Sistemas Informáticos de 3º Grado de Ingeniería Informática en la Universidad de La Laguna (ULL).
+Coco music es un proyecto realizado por Rafa Herrero, Daniel Ramos Acosta y Pedro Ramos para la asignatura Desarrollo de Sistemas Informáticos de 3º Grado de Ingeniería Informática en la Universidad de La Laguna (ULL).
 
-Es una plataforma que permite al usuario gestionar sus listas de reproducciones acorde a los gustos musicales.Todo el sistema funciona sin manejar ningún tipo de fichero que tenga que ver con el usuario, todo está en un servidor y se carga automáticamente según el usuario desee. La plataforma permite realizar todas las funciones que tiene un reproductor de música pero todo en una plataforma web. Además, es posible utilizar la aplicación en cualquier dispositivo ya que se adapta a todas las pantallas y funciona sin ningún tipo de problema.
+Es una plataforma que permite al usuario gestionar sus listas de reproducciones acorde a los gustos musicales. Todo el sistema funciona sin manejar ningún tipo de fichero que tenga que ver con el usuario, todo está en un servidor y se carga automáticamente según el usuario desee. La aplicación permite realizar todas las funciones que tiene un reproductor de música pero todo en una plataforma web. Además, es posible utilizar la aplicación en cualquier dispositivo ya que se adapta a todas las pantallas y funciona sin ningún tipo de problema.
 
 ## Instalación
 
@@ -35,7 +35,7 @@ Para poder desplegar el proyecto, necesitamos la versión `6.1.0` de Node, así 
 
 ## Cómo usarlo
 
-Una vez hayamos lanzado el servidor, tendremos que registrasnos en la plataforma con un correo y una contraseña. Entonces, deberemos colocar la música que deseemos bajo el directorio `import`. Luego, en la página de perfil de tu usuario, hay que pulsar el botón "Actualizar Canciones", y así estas canciones que están en `import` se borrarán y vincularán a tu usuario.
+Una vez hayamos lanzado el servidor, tendremos que registrarnos en la plataforma con un correo y una contraseña. Entonces, deberemos colocar la música que deseemos bajo el directorio `import`. Luego, en la página de perfil de tu usuario, hay que pulsar el botón "Actualizar Canciones", y así estas canciones que están en `import` se borrarán y vincularán a tu usuario.
 
 ## Estructura de Directorio
 
@@ -43,7 +43,7 @@ La estructura de directorio la hemos seguido usando como base el generador de Ex
 
 En el directorio `bin` tenemos el script de arranque, el cual también se puede llamar usando `npm start`. Dentro de `config`, tenemos lo relativo a la configuración de los paquetes `passport`, `mongoose`, y las rutas de Express.
 
-En `app` es donde está la mayor parte del proyecto. En el directorio `assets` tenemos los ficheros de front-end, como las hojas de estilo y los script. Dentro de `controllers` están los ficheros que manipulan las vistas para que se adapten a los clientes, dependiendo de la situación (por ejemplo, en caso de no haber iniciado sesión no saldría el correo en el navbar por ejemplo. Dentro del directorio `views` tenemos por cada controlador una serie de vistas que cambian de nombre dependiendo de que tipo de verbo `CRUD` usemos. Por último, está `models`, que es donde tenemos los modelos que usamos para interactuar con la base de datos de Mongo.
+En `app` es donde está la mayor parte del proyecto. En el directorio `assets` tenemos los ficheros de front-end, como las hojas de estilo y los script. Dentro de `controllers` están los ficheros que manipulan las vistas para que se adapten a los clientes, dependiendo de la situación (por ejemplo, en caso de no haber iniciado sesión no saldría el correo en el navbar por ejemplo. Dentro del directorio `views` tenemos por cada controlador una serie de vistas que cambian de nombre dependiendo de qué tipo de verbo `CRUD` usemos. Por último, está `models`, que es donde tenemos los modelos que usamos para interactuar con la base de datos de Mongo.
 
 
 ## Back-end
@@ -52,7 +52,7 @@ Para la autenticación en la plataforma se ha utilizado `passport`. Usando únic
 ## Front-end
 
 ## Tecnologías usadas
-* `base64-js`: Converte datos binarios a un string para poder enviarlo y usarlo con JQuery.
+* `base64-js`: Convierte datos binarios a un string para poder enviarlo y usarlo con JQuery.
 * `bcrypt-nodejs`: Nos permite cifrar strings para no almacenar texto plano en la base de datos.
 * `body-parser`: Parsea la URL de una petición HTTP y la convierte en un JSON.
 * `bower`: Manejador de paquetes de front-end.
@@ -82,7 +82,7 @@ Como se puede apreciar en el gráfico superior, el que mejor rendimiento ofrece 
 En el caso de Firefox, es capaz de renderizar la página correctamente y de funcionar perfectamente, sin embargo, se detectó en un caso de pruebas que no actualizaba el flag de reproduciendo canción. Sin embargo, no conseguimos repetir este error. Por ello, queda relegado a la segunda posición.
 Curioso es el caso de los dos últimos navegadores, ya que Internet Explorer reproduce sin ningún problema las canciones, salvo en algunas combinaciones en las que no actualiza el flag y no podremos reproducir más canciones hasta que no refresquemos la página. En el caso de Safari, cuando una canción termina, este saltar dos canciones más adelante, por lo que nos aparece en todo momento el aviso de que se está intentando cargar una canción mientras otra ya está en proceso, aunque no debería. Si eliminamos este flag, el comportamiento de este navegador es más que desastroso.
 
-En cuanto a dispositivos móviles, se ha probado el funcionamiento bajo las plataformas Android e iOS. En el caso de la primera, solo es posible utilizar ficheros de pequeño tamaño (no mas de 1 minuto), ya que aquellos que sobrepasen una determinada cantidad, no hace el intento de cargarlos. En el caso de iOS, el funcionamiento es prácticamente de sobresaliente, ya que incluso se nos integra con el propio reproductor del sistema operativo. Sin embargo, no funciona el control del volumen de la aplicación, si no el nativo, por lo que este se oculta en el caso de que se detecte que se carga la web desde iOS. Además, debido a las restricciones de Apple, para evitar un consumo de datos sobre redes móviles elevado, la aplicación no cargará, por lo que será necesario una conexión WiFi.
+En cuanto a dispositivos móviles, se ha probado el funcionamiento bajo las plataformas Android e iOS. En el caso de la primera, solo es posible utilizar ficheros de pequeño tamaño (no más de 1 minuto), ya que aquellos que sobrepasen una determinada cantidad, no hace el intento de cargarlos. En el caso de iOS, el funcionamiento es prácticamente de sobresaliente, ya que incluso se nos integra con el propio reproductor del sistema operativo. Sin embargo, no funciona el control del volumen de la aplicación, si no el nativo, por lo que este se oculta en el caso de que se detecte que se carga la web desde iOS. Además, debido a las restricciones de Apple, para evitar un consumo de datos sobre redes móviles elevado, la aplicación no cargará, por lo que será necesario una conexión WiFi.
 
 ### Página de los autores
 
