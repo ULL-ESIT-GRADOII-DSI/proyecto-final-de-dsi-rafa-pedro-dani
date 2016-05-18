@@ -33,6 +33,10 @@ Para poder desplegar el proyecto, necesitamos la versión `6.1.0` de Node, así 
     npm start
 ```
 
+## Cómo usarlo
+
+Una vez hayamos lanzado el servidor, tendremos que registrasnos en la plataforma con un correo y una contraseña. Entonces, deberemos colocar la música que deseemos bajo el directorio `import`. Luego, en la página de perfil de tu usuario, hay que pulsar el botón "Actualizar Canciones", y así estas canciones que están en `import` se borrarán y vincularán a tu usuario.
+
 ## Estructura de Directorio
 
 La estructura de directorio la hemos seguido usando como base el generador de Express (`express-generator`), y otras que hemos visto por internet para crear usar una arquitectura MVC. Nos han influenciado otros proyectos, como algunos generadores de Yeoman y la estructura de Rails.
