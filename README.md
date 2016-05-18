@@ -4,6 +4,8 @@
 [![David](https://img.shields.io/david/dev/Rafaherrero/proyectoDSI.svg?style=flat-square)](https://david-dm.org/Rafaherrero/proyectoDSI#info=devDependencies&view=table)
 [![GitHub issues](https://img.shields.io/github/issues/Rafaherrero/proyectoDSI.svg?style=flat-square)](https://github.com/Rafaherrero/proyectoDSI)
 
+## Vídeo con la distribución de los commits durante la creación del proyecto
+En el siguiente enlace podrá ver como se ha distribuido la carga de trabajo entre los componentes del grupo según los commits realizados por cada uno, siguiendo un esquema de los archivos que se modificaron: [Vídeo commits CocoMusic](https://youtu.be/csT7chYobfE)
 
 ## Descripción del proyecto
 Coco music es un proyecto realizado por Rafa Herrero,Daniel Ramos Acosta y Pedro Ramos para la asignatura Desarrollo de Sistemas Informáticos de 3º Grado de Ingeniería Informática en la Universidad de La Laguna (ULL).
