@@ -84,7 +84,7 @@ Curioso es el caso de los dos últimos navegadores, ya que Internet Explorer rep
 
 En cuanto a dispositivos móviles, se ha probado el funcionamiento bajo las plataformas Android e iOS. En el caso de la primera, solo es posible utilizar ficheros de pequeño tamaño (no más de 1 minuto), ya que aquellos que sobrepasen una determinada cantidad, no hace el intento de cargarlos. En el caso de iOS, el funcionamiento es prácticamente de sobresaliente, ya que incluso se nos integra con el propio reproductor del sistema operativo. Sin embargo, no funciona el control del volumen de la aplicación, si no el nativo, por lo que este se oculta en el caso de que se detecte que se carga la web desde iOS. Además, debido a las restricciones de Apple, para evitar un consumo de datos sobre redes móviles elevado, la aplicación no cargará, por lo que será necesario una conexión WiFi.
 
-### Página de los autores
+### Páginas de los autores
 
 * [Rafa Herrero](http://rafaherrero.github.io/)
 * [Daniel Ramos](http://danielramosacosta.github.io/#/)
